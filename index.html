@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Thies: Navigatiebalk -->
     <div class="navbar">
         <div class="left-container">
             <div class="icon" onclick="navbar(this)">
@@ -27,6 +28,8 @@
         </div>
         <h1>Outfit website</h1>
     </div>
+
+    <!-- Duco: Outfituitzoeksysteem -->
     <h1 class="vraag" id="vraag">Voor welk seizoen wil jij een outfit uitzoeken?</h1>
     <div class="fotos" id="fotos">
         <img src="lente.png" alt="lente" class="seizoen" onclick="verander(1, 'lente')">
@@ -34,6 +37,8 @@
         <img src="herfst.png" alt="herfst" class="seizoen" onclick="verander(1, 'herfst')">
         <img src="winter.png" alt="winter" class="seizoen" onclick="verander(1, 'winter')">
     </div>
+
+    <!-- Marc: Weerbalk -->
     <a class="weatherwidget-io" href="https://forecast7.com/nl/51d195d99/roermond/" data-label_1="ROERMOND" data-label_2="WINGS AGORA" data-theme="original" >ROERMOND WINGS AGORA</a>
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
