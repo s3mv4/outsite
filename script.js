@@ -68,6 +68,19 @@ function verander(pagina, zonnig) {
             terugEl.setAttribute("onclick", "verander(1, 'zomer')")
             terugEl.style.display = 'block'            
         } else if (seizoen == "lente") {
+            if (zonnig == "1") {
+                fotosEl.innerHTML = `
+                <img src="outjes/lente/zonnig_man1.jpg" alt="" class="seizoen">
+                <img src="outjes/lente/zonnig_man2.jpg" alt="" class="seizoen">
+                <img src="outjes/lente/zonnig_vrouw1.jpg" alt="" class="seizoen">
+                <img src="outjes/lente/zonnig_vrouw2.jpg" alt="" class="seizoen">`
+            } else {
+                fotosEl.innerHTML = `
+                <img src="outjes/lente/regen_man1.jpg" alt="" class="seizoen">
+                <img src="outjes/lente/regen_man2.jpg" alt="" class="seizoen">
+                <img src="outjes/lente/regen_vrouw1.jpg" alt="" class="seizoen">
+                <img src="outjes/lente/regen_vrouw2.jpg" alt="" class="seizoen">`
+            }
             let terugEl = document.getElementById("terug")
             terugEl.setAttribute("onclick", "verander(1, 'lente')")
             terugEl.style.display = 'block'            
